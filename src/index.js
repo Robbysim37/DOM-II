@@ -17,10 +17,10 @@ navLinks.forEach( el => el.addEventListener("mouseleave", (e) =>{
     e.target.style.fontSize = "1.7rem"
 }))
 
-funBusTitle.addEventListener("click", (e) => {
+window.addEventListener("click", (e) => {
     let randomColorArr = ["blue","green","red"]
     let randomIndex = Math.floor(Math.random() * randomColorArr.length)
-    e.target.style.color = randomColorArr[randomIndex]
+    funBusTitle.style.color = randomColorArr[randomIndex]
 })
 
 window.addEventListener("resize", (e) => {
